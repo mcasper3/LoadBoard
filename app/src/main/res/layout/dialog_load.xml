@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="8dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_origin_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/origin"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintBottom_toBottomOf="@id/tv_origin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_origin"
+        />
+
+    <TextView
+        android:id="@+id/tv_origin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintStart_toEndOf="@id/tv_origin_label"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_destination_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/destination"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintBottom_toBottomOf="@id/tv_destination"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_destination"
+        />
+
+    <TextView
+        android:id="@+id/tv_destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintStart_toEndOf="@id/tv_destination_label"
+        app:layout_constraintTop_toBottomOf="@id/tv_origin"
+        />
+
+    <TextView
+        android:id="@+id/tv_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintBottom_toBottomOf="@id/tv_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_date"
+        />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintStart_toEndOf="@id/tv_date_label"
+        app:layout_constraintTop_toBottomOf="@id/tv_destination"
+        />
+
+    <TextView
+        android:id="@+id/tv_value_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintBottom_toBottomOf="@id/tv_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_value"
+        />
+
+    <TextView
+        android:id="@+id/tv_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintStart_toEndOf="@id/tv_value_label"
+        app:layout_constraintTop_toBottomOf="@id/tv_date"
+        />
+
+    <TextView
+        android:id="@+id/tv_equipment_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/equipment"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintBottom_toBottomOf="@id/tv_equipment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_equipment"
+        />
+
+    <TextView
+        android:id="@+id/tv_equipment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintStart_toEndOf="@id/tv_equipment_label"
+        app:layout_constraintTop_toBottomOf="@id/tv_value"
+        />
+
+    <TextView
+        android:id="@+id/tv_locked_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/is_locked"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintBottom_toBottomOf="@id/tv_locked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_locked"
+        />
+
+    <TextView
+        android:id="@+id/tv_locked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintStart_toEndOf="@id/tv_locked_label"
+        app:layout_constraintTop_toBottomOf="@id/tv_equipment"
+        />
+
+    <Switch
+        android:id="@+id/sw_booked"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/is_booked"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_locked"
+        />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="?selectableItemBackground"
+        android:text="@string/cancel"
+        android:textColor="?colorPrimary"
+        app:layout_constraintEnd_toStartOf="@id/btn_save"
+        app:layout_constraintTop_toBottomOf="@id/sw_booked"
+        />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="?selectableItemBackground"
+        android:text="@string/save"
+        android:textColor="?colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sw_booked"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

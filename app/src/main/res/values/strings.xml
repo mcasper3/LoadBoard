@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LoadBoard</string>
+    <string name="origin">Origin:</string>
+    <string name="destination">Destination:</string>
+    <string name="date">Date:</string>
+    <string name="value">Value:</string>
+    <string name="status">Status:</string>
+    <string name="is_locked">Is Locked:</string>
+    <string name="equipment">Equipment:</string>
+    <string name="booked">Booked</string>
+    <string name="available">Available</string>
+    <string name="is_booked">Is Booked</string>
+    <string name="cancel">cancel</string>
+    <string name="save">save</string>
+</resources>
